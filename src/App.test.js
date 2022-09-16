@@ -1,8 +1,19 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("should also render textarea", async () => {
+  const { baseElement } = render(<App />);
+  const user = userEvent.setup();
+  await user.click(screen.getByRole("button", { name: "Toggle" }));
+  expect(baseElement).toMatchSnapshot();
+});
+
+test("should render as expected", async () => {
+  const { baseElement } = render(<App />);
+  const user = userEvent.setup();
+  await user.click(screen.getByText("Enter the dragon"));
+  await user.click(screen.getByText("Lucy"));
+  await user.tab();
+  expect(baseElement).toMatchSnapshot();
 });

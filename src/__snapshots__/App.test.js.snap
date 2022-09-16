@@ -1,0 +1,337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<body>
+  <div>
+    <div
+      class="ant-select ant-select-focused ant-select-enabled"
+      style="width: 120px;"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-controls="test-uuid"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="ant-select-selection
+            ant-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="ant-select-selection__rendered"
+        >
+          <div
+            class="ant-select-selection__placeholder"
+            style="display: none; user-select: none;"
+            unselectable="on"
+          >
+            Enter the dragon
+          </div>
+          <div
+            class="ant-select-selection-selected-value"
+            style="display: block; opacity: 1;"
+            title="Lucy"
+          >
+            Lucy
+          </div>
+        </div>
+        <span
+          class="ant-select-arrow"
+          style="user-select: none;"
+          unselectable="on"
+        >
+          <i
+            aria-label="icon: down"
+            class="anticon anticon-down ant-select-arrow-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class=""
+              data-icon="down"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+              />
+            </svg>
+          </i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    style="position: absolute; top: 0px; left: 0px; width: 100%;"
+  >
+    <div>
+      <div
+        class="ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft  ant-select-dropdown-hidden"
+        style="left: -999px; top: -995px;"
+      >
+        <div
+          id="test-uuid"
+          style="overflow: auto; transform: translateZ(0);"
+        >
+          <ul
+            class="ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical"
+            role="listbox"
+            tabindex="0"
+          >
+            <li
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Jack
+            </li>
+            <li
+              aria-selected="true"
+              class="ant-select-dropdown-menu-item ant-select-dropdown-menu-item-selected"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Lucy
+            </li>
+            <li
+              aria-disabled="true"
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item ant-select-dropdown-menu-item-disabled"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Disabled
+            </li>
+            <li
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              yiminghe
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`should also render textarea 1`] = `
+<body>
+  <div>
+    <button
+      ant-click-animating-without-extra-node="true"
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Toggle
+      </span>
+    </button>
+    <textarea
+      class="ant-input"
+      rows="4"
+    />
+    <div
+      class="ant-select ant-select-enabled"
+      style="width: 120px;"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-controls="test-uuid"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="ant-select-selection
+            ant-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="ant-select-selection__rendered"
+        >
+          <div
+            class="ant-select-selection__placeholder"
+            style="display: block; user-select: none;"
+            unselectable="on"
+          >
+            Enter the dragon
+          </div>
+        </div>
+        <span
+          class="ant-select-arrow"
+          style="user-select: none;"
+          unselectable="on"
+        >
+          <i
+            aria-label="icon: down"
+            class="anticon anticon-down ant-select-arrow-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class=""
+              data-icon="down"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+              />
+            </svg>
+          </i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <style>
+    
+      [ant-click-animating-without-extra-node='true']::after, .ant-click-animating-node {
+        --antd-wave-shadow-color: buttonface;
+      }
+  </style>
+</body>
+`;
+
+exports[`should render as expected 1`] = `
+<body>
+  <div>
+    <button
+      class="ant-btn"
+      type="button"
+    >
+      <span>
+        Toggle
+      </span>
+    </button>
+    <div
+      class="ant-select ant-select-focused ant-select-enabled"
+      style="width: 120px;"
+    >
+      <div
+        aria-autocomplete="list"
+        aria-controls="test-uuid"
+        aria-expanded="false"
+        aria-haspopup="true"
+        class="ant-select-selection
+            ant-select-selection--single"
+        role="combobox"
+        tabindex="0"
+      >
+        <div
+          class="ant-select-selection__rendered"
+        >
+          <div
+            class="ant-select-selection__placeholder"
+            style="display: none; user-select: none;"
+            unselectable="on"
+          >
+            Enter the dragon
+          </div>
+          <div
+            class="ant-select-selection-selected-value"
+            style="display: block; opacity: 1;"
+            title="Lucy"
+          >
+            Lucy
+          </div>
+        </div>
+        <span
+          class="ant-select-arrow"
+          style="user-select: none;"
+          unselectable="on"
+        >
+          <i
+            aria-label="icon: down"
+            class="anticon anticon-down ant-select-arrow-icon"
+          >
+            <svg
+              aria-hidden="true"
+              class=""
+              data-icon="down"
+              fill="currentColor"
+              focusable="false"
+              height="1em"
+              viewBox="64 64 896 896"
+              width="1em"
+            >
+              <path
+                d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+              />
+            </svg>
+          </i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    style="position: absolute; top: 0px; left: 0px; width: 100%;"
+  >
+    <div>
+      <div
+        class="ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft  ant-select-dropdown-hidden"
+        style="left: -999px; top: -995px;"
+      >
+        <div
+          id="test-uuid"
+          style="overflow: auto; transform: translateZ(0);"
+        >
+          <ul
+            class="ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical"
+            role="listbox"
+            tabindex="0"
+          >
+            <li
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Jack
+            </li>
+            <li
+              aria-selected="true"
+              class="ant-select-dropdown-menu-item ant-select-dropdown-menu-item-selected"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Lucy
+            </li>
+            <li
+              aria-disabled="true"
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item ant-select-dropdown-menu-item-disabled"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              Disabled
+            </li>
+            <li
+              aria-selected="false"
+              class="ant-select-dropdown-menu-item"
+              role="option"
+              style="user-select: none;"
+              unselectable="on"
+            >
+              yiminghe
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

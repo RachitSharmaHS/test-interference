@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, Input, Select } from "antd";
+import { useState } from "react";
 
 function App() {
+  const [showTextArea, setShowTextArea] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Button
+        onClick={() =>
+          setShowTextArea((currentShowTextArea) => !currentShowTextArea)
+        }
+      >
+        Toggle
+      </Button>
+      {showTextArea && <Input.TextArea rows={4} />}
+      <Select placeholder="Enter the dragon" style={{ width: 120 }}>
+        <Select.Option value="jack">Jack</Select.Option>
+        <Select.Option value="lucy">Lucy</Select.Option>
+        <Select.Option value="disabled" disabled>
+          Disabled
+        </Select.Option>
+        <Select.Option value="Yiminghe">yiminghe</Select.Option>
+      </Select>
+    </>
   );
 }
 
